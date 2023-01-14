@@ -1,0 +1,115 @@
+/* stylelint-disable selector-no-qualifying-type */
+body {
+  align-items: center;
+  background-image: url('../images/starWarsGalaxy.png');
+  background-repeat: repeat;
+  color: rgb(255, 197, 0);
+  font-weight: 400;
+  justify-content: center;
+}
+
+.container-global {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  width: 98vw;
+}
+
+.container-header {
+  align-items: center;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.img-logo-starWars {
+  width: 8vw;
+}
+
+.button-img {
+  background: none;
+  border: none;
+}
+
+.button-img:hover {
+  cursor: pointer;
+}
+
+.container-filter {
+  align-items: center;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  display: flex;
+  margin-top: 20px;
+  width: 98vw;
+}
+
+.container-options-filter, .container-order {
+  align-items: center;
+  border-right: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 0;
+  width: 35vw;
+}
+
+.container-options-filter form select, input, button {
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.container-options-filter input[ type = 'submit' ], input[ type = 'button' ] {
+  background-color: black;
+  border-color: rgb(255, 197, 0);
+  color: rgb(255, 197, 0);
+  font-weight: 700;
+  height: 25px;
+  margin-top: 10px;
+  width: 120px;
+}
+
+.container-options-filter input[ type = 'text' ] {
+  width: 110px;
+}
+
+.container-options-filter input[ type = 'number' ] {
+  width: 80px;
+}
+
+.container-options-filter input[ type = 'submit' ]:hover, input[ type = 'button' ]:hover {
+  background-color: rgb(255, 197, 0);
+  border-color: black;
+  color: black;
+  cursor: pointer;
+}
+
+.list-filters {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  justify-content: center;
+}
+
+.list-filters li {
+  margin: 2px 10px;
+}
+
+.list-filters button {
+  background-color: black;
+  border-color: rgb(255, 197, 0);
+  color: rgb(255, 197, 0);
+  font-weight: 700;
+  height: 22px;
+  margin-top: 10px;
+  width: 90px;
+}
+
+.list-filters button:hover {
+  background-color: rgb(255, 197, 0);
+  border-color: black;
+  color: black;
+  cursor: pointer;
+}

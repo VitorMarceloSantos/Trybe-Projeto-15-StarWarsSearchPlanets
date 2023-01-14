@@ -1,0 +1,139 @@
+/* stylelint-disable at-rule-semicolon-space-before */
+
+/* stylelint-disable max-line-length */
+
+/* stylelint-disable value-list-comma-space-after */
+
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=News+Cycle:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+@font-face {
+  font-family: Starjhol;
+  src: url('../fonts/star_jedi/starjedi/Starjhol.ttf') format('truetype');
+}
+
+/* Minimal Reset */
+html, body, div, h1, h2, p, section {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  align-items: center;
+  background-image: url('../images/starWarsGalaxy.png');
+  background-repeat: repeat;
+  color: rgb(255, 197, 0);
+  display: flex;
+  font-family: News Cycle , sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  justify-content: center;
+  line-height: 1.25;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.container-starWars {
+  align-items: center;
+  display: flex;
+  font-size: 24px;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+
+}
+
+.intro, title {
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  z-index: 200;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  width: 18rem;
+}
+
+.intro p {
+  color: rgb(75, 213, 238);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container-background .delete-letter {
+  background: linear-gradient(to bottom, black 0%, black 10%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
+  bottom: 0;
+  content: '';
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+.container-background .galaxy {
+  background-image: url('../images/starWarsGalaxy.png');
+  bottom: 0;
+  content: '';
+  height: 20vh;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 200;
+}
+
+.crawl {
+  bottom: 0;
+  font-size: 300%;
+  height: 85rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) perspective(200px) rotateX(15deg);
+  transform-origin: 50% 80%;
+  width: 65%;
+}
+
+.content {
+  position: absolute;
+  top: 100%;
+}
+
+.episode-number {
+  font-weight: 600;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.episode-title {
+  color: white;
+  font-family: Starjhol , cursive;
+  font-size: 170%;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 7rem;
+  text-align: center;
+  transform: scale(1, 1.5);
+}
+
+.content p {
+  font-weight: 700;
+  line-height: 1.33;
+  margin-bottom: 4rem;
+  text-align: justify;
+}

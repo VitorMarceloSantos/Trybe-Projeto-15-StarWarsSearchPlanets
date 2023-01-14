@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Starjhol;
+  src: url('../fonts/star_jedi/starjedi/Starjhol.ttf') format('truetype');
+}
+
+.container-light-saber {
+  align-items: center;
+  display: flex;
+  height: 65vh;
+  justify-content: center;
+  width: 400px;
+}
+
+.title-loading {
+  font-family: Starjhol , sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.container-saber {
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+  width: 500px;
+}
+
+.img-saber {
+  height: 185px;
+  left: -30px;
+  position: absolute;
+  top: 30px;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.laser {
+  border-radius: 50px;
+  height: 15px;
+  left: 110px;
+  position: absolute;
+  top: 117.5px;
+  width: 75%;
+}
+
+.animation {
+  animation: 2s linear infinite running saberLaser;
+}
+
+.green {
+  background: rgba(0, 255, 98, 0.918);
+  box-shadow: 0 0 15px 15px #11fbad7c;
+}
+
+.blue {
+  background: rgb(55, 0, 255);
+  box-shadow: 0 0 15px 15px #2811fb7a;
+}
+
+.yellow {
+  background: rgb(208, 255, 0);
+  box-shadow: 0 0 15px 15px #d0fb117a;
+}
+
+.red {
+  background: rgb(255, 0, 0, 0.972);
+  box-shadow: 0 0 15px 15px #fb111177;
+}
+
+@keyframes saberLaser {
+
+  0% {
+    width: 0%;
+  }
+}
